@@ -7,11 +7,33 @@
  * - name إن استقبلت اسم أو "Hello <name>" تطبع
  */
 
-function greet(name) {}
+let anything = "hello";
 
+function greet(name) {
+  if (name) {
+    anything += name;
+    console.log(anything);
+  } else {
+    console.log("hello ");
+  }
+}
+
+greet();
+greet(ali);
 /*
  * isOdd(n) اسم الدالة
  * - n تستقبل رقم
  * - عدا ذلك false إن كان الرقم فردياً وترجع true ترجع القيمة
  */
-function isOdd(n) {}
+
+let n = parseInt(prompt("اختر عدد"));
+
+function isOdd(n) {
+  if (n % 2 == 1) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+}
+
+isOdd();
